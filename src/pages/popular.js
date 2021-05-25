@@ -29,28 +29,27 @@ export default function Popular() {
           Películas Populares
         </h1>
       </Col>
-      
-        {movieList.results? (
-          <Row>
-            <Col span='24'>
-              <Row>
-                <MovieCatalog movies={movieList} />
-              </Row>
-            </Col>
-            <Col span='24'>
-              <Pagination
-                currentPage={movieList.page}
-                totalItems={movieList.total_results}
-                onChangePage={onChangePage}
-              />
-            </Col>
-          </Row>
-        ) : (
-          <Col span='24'><Loading/></Col>
-        )}
-        <Col span='24'>
-          <Footer/>
-        </Col>
-      </Row>
+      {movieList.results? (
+        <Row>
+          <Col span='24'>
+            <Row>
+              <MovieCatalog movies={movieList} />
+            </Row>
+          </Col>
+          <Col span='24'>
+            <Pagination
+              currentPage={movieList.page}
+              totalItems={movieList.total_results}
+              onChangePage={onChangePage}
+            />
+          </Col>
+        </Row>
+      ) : (
+        <Col span='24'><Loading/></Col>
+      )}
+      <Col span='24'>
+        <Footer/>
+      </Col>
+    </Row>
   )
 }

@@ -29,7 +29,6 @@ export default function MenuTop() {
         <Menu.Item key="4">
           <Link to="/search">Buscador</Link>
         </Menu.Item>
-
       </Menu>
     </div>
   )

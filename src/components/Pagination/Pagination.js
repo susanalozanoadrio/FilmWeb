@@ -5,7 +5,7 @@ import './Pagination.scss';
 
 export default function PaginationMovies(props) {
   const { currentPage, totalItems, onChangePage} = props;
-
+  
   return (
     <Pagination
       className='pagination'

@@ -16,7 +16,6 @@ export default function ModalVideo(props) {
       case 'Vimeo':
         setUrlVideo(`https://vimeo/${videoKey}`)
         break;
-    
       default:
         break;
     }

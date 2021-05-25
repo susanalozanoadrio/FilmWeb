@@ -6,8 +6,8 @@ import Loading from '../Loading'
 import './SliderMovies.scss';
 
 export default function SliderMovies(props) {
-
   const { movies } = props;
+
   if(movies.loading || !movies.result){
     return <Loading/>;
   }
@@ -29,7 +29,8 @@ function Movie(props){
   return (
     <div 
       className='slider-movies__movie' 
-      style={{backgroundImage:`url('${backdropPath}')`}}>
+      style={{backgroundImage:`url('${backdropPath}')`}}
+      >
       <div className='slider-movies__movie-info'>
         <div>
           <h2>{title}</h2>

@@ -20,7 +20,6 @@ export default function Movie() {
   }
   
   return <RenderMovie movieInfo={movieInfo.result}/>
-
 }
 
 function RenderMovie(props) {
@@ -95,13 +94,11 @@ function MovieInfo(props) {
       <div className='movie__info-content'>
         <h3>General</h3>
         <p>{overview}</p>
-
         <h3>Generos</h3>
         <ul>{genres.map(gender => (
           <li key={gender.id}>{gender.name}</li>
         ) )}</ul>
       </div>
     </>
-
   );
 }

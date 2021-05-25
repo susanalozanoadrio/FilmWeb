@@ -21,15 +21,11 @@ function MovieCard(props) {
   const {Meta} = Card;
  
   useEffect(() => {
-      console.log(poster_path);
-      if (!poster_path) {
-        console.log(poster_path);
-        setPosterPath('dibujopeli.png');
-      }
-    
+    if (!poster_path) {
+      setPosterPath('dibujopeli.png');
+    }
   }, [poster_path]);
 
-  console.log(posterPath);
   return (
     <Link to={`/movie/${id}`} >
       <Card 

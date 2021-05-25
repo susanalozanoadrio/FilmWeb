@@ -7,9 +7,7 @@ import 'rc-pagination/assets/index.css';
 import './index.css';
 
 ReactDOM.render(
- 
     <App />,
-  
     document.getElementById('root')
 );
 

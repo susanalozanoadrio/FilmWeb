@@ -4,9 +4,8 @@ import { withRouter } from 'react-router-dom';
 import queryString from 'query-string';
 import MovieCatalog from '../../components/MovieCatalog';
 import Footer from '../../components/Footer';
-import {URL_API, API } from '../../utils/constants';
 import Loading from '../../components/Loading'
-
+import {URL_API, API } from '../../utils/constants';
 
 import './search.scss';
 
@@ -16,7 +15,6 @@ function Search(props) {
   const [ searchValue, setSearchValue ] = useState('');
 
   useEffect(() => {
-
     (async () => {
       const searchValue = queryString.parseUrl(location.search);
       const { s } = searchValue.query;
